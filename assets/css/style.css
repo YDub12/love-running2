@@ -94,6 +94,8 @@ main {
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Hero section */
@@ -199,6 +201,50 @@ main {
     line-height: 0;
 }
 
+/* Signup page formatting */
+#signup {
+    background: url("/assets/images/signup-image.webp") no-repeat center center/cover;
+    background-size: cover;
+    background-position: 75%;
+    padding: 20px 10% 0 10%;
+    flex-grow: 1;
+}
+
+#signup-form {
+    color: #ffffff;
+    background-color: rgba(60, 60, 60, 0.6);
+    padding: 30px;
+}
+#signup-form>h2 {
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+
+.text-input {
+    background: transparent;
+    color: #fafafa;
+    border: 1px solid #fafafa;
+    height: 25px;
+    width: 100%;
+    border-radius: 2px;
+    padding: 0 5px;
+}
+
+.radio-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.join-button {
+    border-radius: 2px;
+    background-color: #454b1b;
+    color: #fafafa;
+    font-size: 100%;
+    margin-top: 20px;
+    padding: 15px 32px;
+}
+
 /* Footer */
 #social-networks {
     text-align: center;
@@ -227,7 +273,25 @@ main {
         column-gap: 0;
     }
 
+    #signup {
+        background-position: center;
+        position: relative;
+    }
 
+    #signup-form {
+        max-width: 400px;
+        position: absolute;
+        left: 10%;
+        top: 50px;
+    }
+
+    .text-input:hover {
+        border-color: #f16c6b;
+    }
+    .join-button:hover {
+        background-color: #fafafa;
+        color: #454b1b;
+    }
 
     /* Header */
     nav {
